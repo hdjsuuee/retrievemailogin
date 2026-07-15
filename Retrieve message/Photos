@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger Email Lookup </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Messenger Email Lookup</h1>
+
+    <div class="warning">
+        
+        This page does retrieve real Messenger or Facebook account information.
+    </div>
+
+    <input
+        type="text"
+        placeholder="Enter any text "
+        id="username/EMAIL">
+
+
+
+    <div id="loading" class="hidden">
+        <p>Generating ...</p>
+
+        <div class="progress">
+            <div id="bar"></div>
+        </div>
+    </div>
+
+    <div id="result" class="hidden">
+        <h2>Sample Result</h2>
+
+        <p><strong>Name:</strong> Demo User</p>
+
+        <p><strong>Sample Email:</strong>
+            retrievemailogin@hotmail.com
+        </p>
+
+        <p class="note">
+            This email address is shown only as an example.
+            account lookup has been performed.
+        </p>
+    </div>
+</div>
+
+<script>
+function fakeSearch(){
+
+    document.getElementById("loading").classList.remove("hidden");
+    document.getElementById("result").classList.add("hidden");
+
+    let width = 0;
+    let bar = document.getElementById("bar");
+
+    let timer = setInterval(function(){
+
+
+        }else{
+
+            width++;
+            bar.style.width = width + "%";
+
+        }
+
+    },25);
+
+}
+
+</body>
+</html>
